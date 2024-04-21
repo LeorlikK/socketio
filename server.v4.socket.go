@@ -98,7 +98,7 @@ func (v4 inSocketV4) Except(rooms ...Room) innTooExceptEmit {
 
 // Emit - sending to all connected clients
 func (v4 inSocketV4) Emit(event Event, data ...Data) error {
-	fmt.Println("222")
+	fmt.Println("111")
 	v3 := v4.prev
 	v2 := v3.prev
 	v1 := v2.prev
@@ -106,15 +106,21 @@ func (v4 inSocketV4) Emit(event Event, data ...Data) error {
 	transport := v1.tr().(siot.Emitter)
 
 	if len(v1.id) == 0 && len(v1.to) == 0 {
+		fmt.Println("222")
 		for _, id := range transport.Sockets(v1.nsp()).IDs() {
+			fmt.Println("333")
 			if id == v1._socketID && v1.isSender {
+				fmt.Println("444")
 				continue // skip sending back to sender
 			}
+			fmt.Println("555")
 			v1.addID(id)
 		}
 		// send to local server ... since this is not a broadcast
 		if ns, ok := v1.events[v1.nsp()]; ok {
+			fmt.Println("666")
 			if events, ok := ns[event][v1._socketID]; ok {
+				fmt.Println("777")
 				events.Callback(seri.Convert(data).ToInterface()...)
 			}
 		}
@@ -123,16 +129,19 @@ func (v4 inSocketV4) Emit(event Event, data ...Data) error {
 
 	var uniqueID = map[SocketID]struct{}{}
 	for _, exceptRoom := range v4.except {
+		fmt.Println("888")
 		rooms, err := transport.Sockets(v1.nsp()).FromRoom(exceptRoom)
 		if err != nil {
 			fmt.Printf("Error while emitting event: %v\n", err)
 			time.Sleep(10 * time.Second)
 		}
 		for _, id := range rooms {
+			fmt.Println("999")
 			uniqueID[id] = struct{}{}
 		}
 	}
 	for _, toRoom := range v1.to {
+		fmt.Println("10")
 		ids, err := transport.Sockets(v1.nsp()).FromRoom(toRoom)
 		if err != nil {
 			fmt.Printf("Error while emitting event: %v\n", err)
@@ -140,11 +149,14 @@ func (v4 inSocketV4) Emit(event Event, data ...Data) error {
 		}
 
 		for _, id := range ids {
+			fmt.Println("11")
 			if id == v1._socketID && !v1.isServer {
+				fmt.Println("12")
 				continue // skip sending back to sender
 			}
 
 			if _, inSet := uniqueID[id]; !inSet {
+				fmt.Println("13")
 				v1.addID(id)
 				uniqueID[id] = struct{}{}
 			}
@@ -155,7 +167,7 @@ func (v4 inSocketV4) Emit(event Event, data ...Data) error {
 		fmt.Printf("Error while emitting event: %v\n", err)
 		time.Sleep(10 * time.Second)
 	}
-
+	fmt.Println("14")
 	return nil
 }
 
