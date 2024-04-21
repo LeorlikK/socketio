@@ -1,4 +1,4 @@
-module github.com/njones/socketio
+module github.com/LeorlikK/socketio
 
 go 1.17
 
