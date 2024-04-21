@@ -3,6 +3,7 @@ package socketio
 import (
 	"strings"
 	"time"
+	"fmt"
 
 	seri "github.com/njones/socketio/serialize"
 	siot "github.com/njones/socketio/transport"
@@ -97,6 +98,7 @@ func (v4 inSocketV4) Except(rooms ...Room) innTooExceptEmit {
 
 // Emit - sending to all connected clients
 func (v4 inSocketV4) Emit(event Event, data ...Data) error {
+	fmt.Println("111")
 	v3 := v4.prev
 	v2 := v3.prev
 	v1 := v2.prev
