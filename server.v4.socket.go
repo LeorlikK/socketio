@@ -125,7 +125,8 @@ func (v4 inSocketV4) Emit(event Event, data ...Data) error {
 	for _, exceptRoom := range v4.except {
 		rooms, err := transport.Sockets(v1.nsp()).FromRoom(exceptRoom)
 		if err != nil {
-			ErrFromRoomFailed.F(err)
+			fmt.Printf("Error while emitting event: %v\n", err)
+			time.Sleep(10 * time.Second)
 		}
 		for _, id := range rooms {
 			uniqueID[id] = struct{}{}
@@ -134,7 +135,8 @@ func (v4 inSocketV4) Emit(event Event, data ...Data) error {
 	for _, toRoom := range v1.to {
 		ids, err := transport.Sockets(v1.nsp()).FromRoom(toRoom)
 		if err != nil {
-			ErrFromRoomFailed.F(err)
+			fmt.Printf("Error while emitting event: %v\n", err)
+			time.Sleep(10 * time.Second)
 		}
 
 		for _, id := range ids {
@@ -149,7 +151,12 @@ func (v4 inSocketV4) Emit(event Event, data ...Data) error {
 		}
 	}
 
-	return v1.emit(event, data...)
+	if err := v1.emit(event, data...); err != nil {
+		fmt.Printf("Error while emitting event: %v\n", err)
+		time.Sleep(10 * time.Second)
+	}
+
+	return nil
 }
 
 type onConnectCallbackVersion4 = func(*SocketV4) error
