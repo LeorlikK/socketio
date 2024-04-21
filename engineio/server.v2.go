@@ -18,9 +18,9 @@ import (
 	"strings"
 	"time"
 
-	eiop "github.com/njones/socketio/engineio/protocol"
-	eios "github.com/njones/socketio/engineio/session"
-	eiot "github.com/njones/socketio/engineio/transport"
+	eiop "github.com/LeorlikK/socketio/engineio/protocol"
+	eios "github.com/LeorlikK/socketio/engineio/session"
+	eiot "github.com/LeorlikK/socketio/engineio/transport"
 )
 
 const Version2 EIOVersionStr = "2"

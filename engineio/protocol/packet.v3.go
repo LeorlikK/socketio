@@ -8,7 +8,7 @@ import (
 	"encoding/json"
 	"io"
 
-	rw "github.com/njones/socketio/internal/readwriter"
+	rw "github.com/LeorlikK/socketio/internal/readwriter"
 )
 
 // PacketV3 is defined: https://github.com/socketio/engine.io-protocol/tree/v3

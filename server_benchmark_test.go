@@ -12,7 +12,7 @@ import (
 	"testing"
 	"time"
 
-	sios "github.com/njones/socketio/session"
+	sios "github.com/LeorlikK/socketio/session"
 	"github.com/stretchr/testify/assert"
 )
 

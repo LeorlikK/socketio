@@ -1,12 +1,12 @@
 package socketio
 
 import (
+	"fmt"
 	"strings"
 	"time"
-	"fmt"
 
-	seri "github.com/njones/socketio/serialize"
-	siot "github.com/njones/socketio/transport"
+	seri "github.com/LeorlikK/socketio/serialize"
+	siot "github.com/LeorlikK/socketio/transport"
 )
 
 var v4ProtectedEventName = map[Event]struct{}{

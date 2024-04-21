@@ -40,10 +40,10 @@ import (
 	"net/http"
 	"time"
 
-	sio "github.com/njones/socketio"
-	eio "github.com/njones/socketio/engineio"
-	eiot "github.com/njones/socketio/engineio/transport"
-	ser "github.com/njones/socketio/serialize"
+	sio "github.com/LeorlikK/socketio"
+	eio "github.com/LeorlikK/socketio/engineio"
+	eiot "github.com/LeorlikK/socketio/engineio/transport"
+	ser "github.com/LeorlikK/socketio/serialize"
 )
 
 func main() {
@@ -83,10 +83,10 @@ import (
 	"net/http"
 	"time"
 
-	sio "github.com/njones/socketio"
-	eio "github.com/njones/socketio/engineio"
-	eiot "github.com/njones/socketio/engineio/transport"
-	ser "github.com/njones/socketio/serialize"
+	sio "github.com/LeorlikK/socketio"
+	eio "github.com/LeorlikK/socketio/engineio"
+	eiot "github.com/LeorlikK/socketio/engineio/transport"
+	ser "github.com/LeorlikK/socketio/serialize"
 )
 
 // Define a custom wrapper 

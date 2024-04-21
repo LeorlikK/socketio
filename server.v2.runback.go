@@ -1,8 +1,8 @@
 package socketio
 
 import (
-	siop "github.com/njones/socketio/protocol"
-	siot "github.com/njones/socketio/transport"
+	siop "github.com/LeorlikK/socketio/protocol"
+	siot "github.com/LeorlikK/socketio/transport"
 )
 
 func doConnectPacketV2(v2 *ServerV2) func(SocketID, siot.Socket, *Request) error {

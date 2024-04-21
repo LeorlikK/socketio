@@ -1,6 +1,6 @@
 package engineio
 
-import with "github.com/njones/socketio/internal/option"
+import with "github.com/LeorlikK/socketio/internal/option"
 
 type Option = with.Option
 type OptionWith = with.OptionWith

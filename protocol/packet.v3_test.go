@@ -7,7 +7,7 @@ import (
 	"strings"
 	"testing"
 
-	itst "github.com/njones/socketio/internal/test"
+	itst "github.com/LeorlikK/socketio/internal/test"
 	"github.com/stretchr/testify/assert"
 )
 

@@ -6,10 +6,10 @@ import (
 	"sync"
 	"sync/atomic"
 
-	eiot "github.com/njones/socketio/engineio/transport"
-	siop "github.com/njones/socketio/protocol"
-	sios "github.com/njones/socketio/session"
-	siot "github.com/njones/socketio/transport"
+	eiot "github.com/LeorlikK/socketio/engineio/transport"
+	siop "github.com/LeorlikK/socketio/protocol"
+	sios "github.com/LeorlikK/socketio/session"
+	siot "github.com/LeorlikK/socketio/transport"
 )
 
 type (

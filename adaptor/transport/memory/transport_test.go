@@ -8,13 +8,13 @@ import (
 	"sync"
 	"testing"
 
-	tmap "github.com/njones/socketio/adaptor/transport/memory"
-	eiop "github.com/njones/socketio/engineio/protocol"
-	eiot "github.com/njones/socketio/engineio/transport"
-	itst "github.com/njones/socketio/internal/test"
-	siop "github.com/njones/socketio/protocol"
-	sess "github.com/njones/socketio/session"
-	siot "github.com/njones/socketio/transport"
+	tmap "github.com/LeorlikK/socketio/adaptor/transport/memory"
+	eiop "github.com/LeorlikK/socketio/engineio/protocol"
+	eiot "github.com/LeorlikK/socketio/engineio/transport"
+	itst "github.com/LeorlikK/socketio/internal/test"
+	siop "github.com/LeorlikK/socketio/protocol"
+	sess "github.com/LeorlikK/socketio/session"
+	siot "github.com/LeorlikK/socketio/transport"
 	"github.com/stretchr/testify/assert"
 )
 

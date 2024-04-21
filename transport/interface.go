@@ -1,6 +1,6 @@
 package transport
 
-import eiot "github.com/njones/socketio/engineio/transport"
+import eiot "github.com/LeorlikK/socketio/engineio/transport"
 
 type packet interface {
 	GetType() byte

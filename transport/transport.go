@@ -4,11 +4,11 @@ import (
 	"io"
 	"strings"
 
-	eiop "github.com/njones/socketio/engineio/protocol"
-	eios "github.com/njones/socketio/engineio/session"
-	eiot "github.com/njones/socketio/engineio/transport"
-	siop "github.com/njones/socketio/protocol"
-	sios "github.com/njones/socketio/session"
+	eiop "github.com/LeorlikK/socketio/engineio/protocol"
+	eios "github.com/LeorlikK/socketio/engineio/session"
+	eiot "github.com/LeorlikK/socketio/engineio/transport"
+	siop "github.com/LeorlikK/socketio/protocol"
+	sios "github.com/LeorlikK/socketio/session"
 )
 
 type (

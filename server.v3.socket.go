@@ -3,7 +3,7 @@ package socketio
 import (
 	"strings"
 
-	siot "github.com/njones/socketio/transport"
+	siot "github.com/LeorlikK/socketio/transport"
 )
 
 var v3ProtectedEventName = map[Event]struct{}{

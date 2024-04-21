@@ -4,8 +4,8 @@ import (
 	"net/http"
 	"strconv"
 
-	eios "github.com/njones/socketio/engineio/session"
-	eiot "github.com/njones/socketio/engineio/transport"
+	eios "github.com/LeorlikK/socketio/engineio/session"
+	eiot "github.com/LeorlikK/socketio/engineio/transport"
 )
 
 type ctxKey string

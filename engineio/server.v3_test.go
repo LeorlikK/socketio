@@ -7,8 +7,8 @@ import (
 	"net/http/httptest"
 	"testing"
 
-	eio "github.com/njones/socketio/engineio"
-	eios "github.com/njones/socketio/engineio/session"
+	eio "github.com/LeorlikK/socketio/engineio"
+	eios "github.com/LeorlikK/socketio/engineio/session"
 	"github.com/stretchr/testify/assert"
 )
 

@@ -7,11 +7,11 @@ import (
 	"strings"
 	"sync"
 
-	nmem "github.com/njones/socketio/adaptor/transport/memory"
-	eio "github.com/njones/socketio/engineio"
-	erro "github.com/njones/socketio/internal/errors"
-	siop "github.com/njones/socketio/protocol"
-	siot "github.com/njones/socketio/transport"
+	nmem "github.com/LeorlikK/socketio/adaptor/transport/memory"
+	eio "github.com/LeorlikK/socketio/engineio"
+	erro "github.com/LeorlikK/socketio/internal/errors"
+	siop "github.com/LeorlikK/socketio/protocol"
+	siot "github.com/LeorlikK/socketio/transport"
 )
 
 // The 3rd revision (included in socket.io@1.0.0...1.0.2) can be found here: https://github.com/socketio/socket.io-protocol/tree/v3

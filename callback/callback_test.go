@@ -8,7 +8,7 @@ import (
 	"os"
 	"strings"
 
-	"github.com/njones/socketio/serialize"
+	"github.com/LeorlikK/socketio/serialize"
 )
 
 // eventCallback is just a wrapper function that will fake a callback. It's needed only for these examples.

@@ -6,10 +6,10 @@ import (
 	"sync"
 	"sync/atomic"
 
-	call "github.com/njones/socketio/callback"
-	siop "github.com/njones/socketio/protocol"
-	seri "github.com/njones/socketio/serialize"
-	siot "github.com/njones/socketio/transport"
+	call "github.com/LeorlikK/socketio/callback"
+	siop "github.com/LeorlikK/socketio/protocol"
+	seri "github.com/LeorlikK/socketio/serialize"
+	siot "github.com/LeorlikK/socketio/transport"
 )
 
 const serverEvent = "...*..."

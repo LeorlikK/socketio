@@ -8,8 +8,8 @@ import (
 	"strings"
 	"time"
 
-	eiop "github.com/njones/socketio/engineio/protocol"
-	eiot "github.com/njones/socketio/engineio/transport"
+	eiop "github.com/LeorlikK/socketio/engineio/protocol"
+	eiot "github.com/LeorlikK/socketio/engineio/transport"
 )
 
 // https://github.com/socketio/engine.io/tree/3.1.x

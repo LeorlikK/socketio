@@ -10,7 +10,7 @@ import (
 	"fmt"
 	"io"
 
-	rw "github.com/njones/socketio/internal/readwriter"
+	rw "github.com/LeorlikK/socketio/internal/readwriter"
 )
 
 // PacketV4 is a v3 with different binary handling

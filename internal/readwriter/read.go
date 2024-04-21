@@ -5,7 +5,7 @@ import (
 	"errors"
 	"io"
 
-	errs "github.com/njones/socketio/internal/errors"
+	errs "github.com/LeorlikK/socketio/internal/errors"
 )
 
 type rdrErr interface {

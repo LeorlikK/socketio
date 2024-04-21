@@ -3,7 +3,7 @@ package protocol
 import (
 	"io"
 
-	rw "github.com/njones/socketio/internal/readwriter"
+	rw "github.com/LeorlikK/socketio/internal/readwriter"
 )
 
 type Payload []Packet

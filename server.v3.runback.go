@@ -3,8 +3,8 @@ package socketio
 import (
 	"fmt"
 
-	siop "github.com/njones/socketio/protocol"
-	siot "github.com/njones/socketio/transport"
+	siop "github.com/LeorlikK/socketio/protocol"
+	siot "github.com/LeorlikK/socketio/transport"
 )
 
 func doConnectPacketV3(v3 *ServerV3) func(SocketID, siot.Socket, *Request) error {

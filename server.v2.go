@@ -4,10 +4,10 @@ import (
 	"net/http"
 	"sync"
 
-	nmem "github.com/njones/socketio/adaptor/transport/memory"
-	eio "github.com/njones/socketio/engineio"
-	siop "github.com/njones/socketio/protocol"
-	siot "github.com/njones/socketio/transport"
+	nmem "github.com/LeorlikK/socketio/adaptor/transport/memory"
+	eio "github.com/LeorlikK/socketio/engineio"
+	siop "github.com/LeorlikK/socketio/protocol"
+	siot "github.com/LeorlikK/socketio/transport"
 )
 
 // The 4th revision (included in socket.io@1.0.3...2.x.x) can be found here: https://github.com/socketio/socket.io-protocol/tree/v4

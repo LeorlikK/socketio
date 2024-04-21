@@ -9,9 +9,9 @@ import (
 	"sync"
 	"testing"
 
+	eiop "github.com/LeorlikK/socketio/engineio/protocol"
 	"github.com/gobwas/ws"
 	"github.com/gobwas/ws/wsutil"
-	eiop "github.com/njones/socketio/engineio/protocol"
 	"github.com/stretchr/testify/assert"
 )
 

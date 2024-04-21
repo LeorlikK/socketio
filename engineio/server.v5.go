@@ -4,8 +4,8 @@
 package engineio
 
 import (
-	eiop "github.com/njones/socketio/engineio/protocol"
-	eiot "github.com/njones/socketio/engineio/transport"
+	eiop "github.com/LeorlikK/socketio/engineio/protocol"
+	eiot "github.com/LeorlikK/socketio/engineio/transport"
 )
 
 const Version5 EIOVersionStr = "5"
@@ -17,25 +17,25 @@ func init() { registry[Version5.Int()] = NewServerV5 }
 
 /*
 - `initial_headers`
-    - Fired on the first request of the connection, before writing the response headers
-    - **Arguments**
-      - `headers` (`Object`): a hash of headers
-      - `req` (`http.IncomingMessage`): the request
+  - Fired on the first request of the connection, before writing the response headers
+  - **Arguments**
+  - `headers` (`Object`): a hash of headers
+  - `req` (`http.IncomingMessage`): the request
 
 - `headers`
-    - Fired on the all requests of the connection, before writing the response headers
-    - **Arguments**
-      - `headers` (`Object`): a hash of headers
-      - `req` (`http.IncomingMessage`): the request
+  - Fired on the all requests of the connection, before writing the response headers
+  - **Arguments**
+  - `headers` (`Object`): a hash of headers
+  - `req` (`http.IncomingMessage`): the request
 
 - `connection_error`
-    - Fired when an error occurs when establishing the connection.
-    - **Arguments**
-      - `error`: an object with following properties:
-        - `req` (`http.IncomingMessage`): the request that was dropped
-        - `code` (`Number`): one of `Server.errors`
-        - `message` (`string`): one of `Server.errorMessages`
-        - `context` (`Object`): extra info about the error
+  - Fired when an error occurs when establishing the connection.
+  - **Arguments**
+  - `error`: an object with following properties:
+  - `req` (`http.IncomingMessage`): the request that was dropped
+  - `code` (`Number`): one of `Server.errors`
+  - `message` (`string`): one of `Server.errorMessages`
+  - `context` (`Object`): extra info about the error
 
 | Code | Message |
 | ---- | ------- |

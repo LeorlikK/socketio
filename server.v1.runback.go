@@ -5,9 +5,9 @@ import (
 	"fmt"
 	"net/http"
 
-	eiot "github.com/njones/socketio/engineio/transport"
-	siop "github.com/njones/socketio/protocol"
-	siot "github.com/njones/socketio/transport"
+	eiot "github.com/LeorlikK/socketio/engineio/transport"
+	siop "github.com/LeorlikK/socketio/protocol"
+	siot "github.com/LeorlikK/socketio/transport"
 )
 
 func autoConnect(v1 *ServerV1) func(transport eiot.Transporter, r *http.Request) {

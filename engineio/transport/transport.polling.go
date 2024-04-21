@@ -9,8 +9,8 @@ import (
 	"strings"
 	"time"
 
-	eiop "github.com/njones/socketio/engineio/protocol"
-	eios "github.com/njones/socketio/engineio/session"
+	eiop "github.com/LeorlikK/socketio/engineio/protocol"
+	eios "github.com/LeorlikK/socketio/engineio/session"
 	"golang.org/x/text/transform"
 )
 

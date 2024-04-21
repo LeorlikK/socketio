@@ -3,7 +3,7 @@ package readwriter
 import (
 	"io"
 
-	errs "github.com/njones/socketio/internal/errors"
+	errs "github.com/LeorlikK/socketio/internal/errors"
 )
 
 func (rdr *Reader) ConditionalErr(err error) rdrCondErr {

@@ -1,7 +1,7 @@
 package socketio
 
 import (
-	erro "github.com/njones/socketio/internal/errors"
+	erro "github.com/LeorlikK/socketio/internal/errors"
 )
 
 const ver = "version"

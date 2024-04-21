@@ -1,6 +1,6 @@
 package transport
 
-import erro "github.com/njones/socketio/internal/errors"
+import erro "github.com/LeorlikK/socketio/internal/errors"
 
 const (
 	ErrDecodeFailed        erro.StringF = "failed to decode the %q transport:: %w"

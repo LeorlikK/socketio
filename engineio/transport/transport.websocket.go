@@ -10,8 +10,8 @@ import (
 	"sync"
 	"time"
 
-	eiop "github.com/njones/socketio/engineio/protocol"
-	eios "github.com/njones/socketio/engineio/session"
+	eiop "github.com/LeorlikK/socketio/engineio/protocol"
+	eios "github.com/LeorlikK/socketio/engineio/session"
 	errg "golang.org/x/sync/errgroup"
 	ws "nhooyr.io/websocket"
 )

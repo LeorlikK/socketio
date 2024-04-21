@@ -3,10 +3,10 @@ package socketio
 import (
 	"net/http"
 
-	nmem "github.com/njones/socketio/adaptor/transport/memory"
-	eio "github.com/njones/socketio/engineio"
-	siop "github.com/njones/socketio/protocol"
-	siot "github.com/njones/socketio/transport"
+	nmem "github.com/LeorlikK/socketio/adaptor/transport/memory"
+	eio "github.com/LeorlikK/socketio/engineio"
+	siop "github.com/LeorlikK/socketio/protocol"
+	siot "github.com/LeorlikK/socketio/transport"
 )
 
 // https://socket.io/docs/v4/migrating-from-2-x-to-3-0/

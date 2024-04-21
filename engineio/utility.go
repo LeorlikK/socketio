@@ -3,7 +3,7 @@ package engineio
 import (
 	"net/http"
 
-	eiot "github.com/njones/socketio/engineio/transport"
+	eiot "github.com/LeorlikK/socketio/engineio/transport"
 )
 
 func amp(str string) *string { return &str }

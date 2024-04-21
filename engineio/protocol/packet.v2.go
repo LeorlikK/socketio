@@ -9,7 +9,7 @@ import (
 	"io"
 	"strings"
 
-	rw "github.com/njones/socketio/internal/readwriter"
+	rw "github.com/LeorlikK/socketio/internal/readwriter"
 )
 
 type PacketV2 struct{ Packet }

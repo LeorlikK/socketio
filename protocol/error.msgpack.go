@@ -1,6 +1,6 @@
 package protocol
 
-import erro "github.com/njones/socketio/internal/errors"
+import erro "github.com/LeorlikK/socketio/internal/errors"
 
 const (
 	ErrDecodeBase64Failed erro.StringF = "failed to decode msgpack base64 field:: %w"

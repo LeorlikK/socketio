@@ -4,7 +4,7 @@ import (
 	"errors"
 	"fmt"
 
-	erro "github.com/njones/socketio/internal/errors"
+	erro "github.com/LeorlikK/socketio/internal/errors"
 )
 
 // All of the errors that can happen while reading or writing socket.io packets

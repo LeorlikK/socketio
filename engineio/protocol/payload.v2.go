@@ -7,7 +7,7 @@ import (
 	"io"
 	"strconv"
 
-	rw "github.com/njones/socketio/internal/readwriter"
+	rw "github.com/LeorlikK/socketio/internal/readwriter"
 )
 
 // PayloadV2 is defined: https://github.com/socketio/engine.io-protocol/tree/v2

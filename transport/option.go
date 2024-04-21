@@ -1,6 +1,6 @@
 package transport
 
-import with "github.com/njones/socketio/internal/option"
+import with "github.com/LeorlikK/socketio/internal/option"
 
 type option = with.Option
 type optionWith = with.OptionWith
